@@ -12,9 +12,19 @@ https://webflux-auth0-demo.herokuapp.com/
 - Auth0 テナント
   - Allowed Callback URLs に次を指定: `http://localhost:8080/login/oauth2/code/auth0`
 - `application.yml` 用設定値
-  - Domain -> `auth0-domain`
-  - Client ID -> `spring.security.oauth2.client.registration.auth0.client-id`
-  - Client Secret -> `spring.security.oauth2.client.registration.auth0.client-secret`
+  - Domain
+  - Client ID
+  - Client Secret
+
+## ローカルでの動かし方
+
+```bash
+export AUTH0_DOMAIN=xxx.auth0.com
+export AUTH0_CLIENT_ID=xxx
+export AUTH0_CLIENT_SECRET=xxx
+./gradlew build
+java -jar build/libs/webflux-auth0-demo.jar
+```
 
 ## 参考
 

@@ -18,7 +18,3 @@ spring:
             token-uri: https://${AUTH0_DOMAIN}/oauth/token
             user-info-uri: https://${AUTH0_DOMAIN}/userinfo
             user-name-attribute: sub
-
-logging:
-  level:
-    org.springframework.web: DEBUG
