@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title th:text="${title}">(title)</title>
+</head>
+<body>
+<p>Welcome <strong th:text="${username}">(username)</strong>!</p>
+<table border="1">
+    <tr th:each="attr : ${attributes}">
+        <td th:text="${attr.key}">(key)</td>
+        <td th:text="${attr.value}">(value)</td>
+    </tr>
+</table>
+</body>
+</html>
