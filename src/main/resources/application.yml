@@ -1,5 +1,3 @@
-auth0-domain: xxx.eu.auth0.com
-
 spring:
   thymeleaf:
     cache: false
@@ -8,17 +6,17 @@ spring:
       client:
         registration:
           auth0:
-            client-id: xxx
-            client-secret: xxx
+            client-id: ${AUTH0_CLIENT_ID}
+            client-secret: ${AUTH0_CLIENT_SECRET}
             authorization-grant-type: authorization_code
             redirect-uri-template: '{baseUrl}/login/oauth2/code/auth0'
             client-name: auth0
             scope: openid profile
         provider:
           auth0:
-            authorization-uri: https://${auth0-domain}/authorize
-            token-uri: https://${auth0-domain}/oauth/token
-            user-info-uri: https://${auth0-domain}/userinfo
+            authorization-uri: https://${AUTH0_DOMAIN}/authorize
+            token-uri: https://${AUTH0_DOMAIN}/oauth/token
+            user-info-uri: https://${AUTH0_DOMAIN}/userinfo
             user-name-attribute: sub
 
 logging:
