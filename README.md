@@ -5,7 +5,7 @@ Auth0 とは純粋な OIDC (OpenID Connect) でやりとりし、Auth0 提供の
 
 ## オンラインデモ
 
-https://webflux-auth0-demo.herokuapp.com/
+https://webflux-auth0-demo.azurewebsites.net/
 
 ## ブログ記事
 
